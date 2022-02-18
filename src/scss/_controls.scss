@@ -1,0 +1,52 @@
+a,
+button,
+input {
+   outline: none;
+}
+.btn {
+   color: $color-text-light;
+   text-transform: uppercase;
+   min-width: 13.5rem;
+   padding: 1rem 1.5rem;
+   border-radius: 0;
+   font-size: 1.4rem;
+   @media (max-width: 576px) {
+      min-width: 7rem;
+   }
+
+   &-light {
+      color: $success;
+   }
+}
+
+.form-control {
+   background-color: #fefcf9;
+   border: 1px solid #e5e5e5;
+   border-radius: 0;
+   padding: 1rem 1.5em;
+   min-height: 5rem;
+   font-size: 1.5rem;
+
+   &--white {
+      background-color: #fff;
+   }
+
+   &--small {
+      width: calc(100% - 2rem);
+      @media (max-width: 768px) {
+         width: 100%;
+      }
+   }
+
+   &--textarea {
+      resize: none;
+      min-height: 20rem;
+      margin-bottom: 15px;
+   }
+
+   &::placeholder {
+      color: #cccccc;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+   }
+}

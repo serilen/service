@@ -1,0 +1,36 @@
+.header {
+   text-align: center;
+   background-color: $color-text-light;
+   background-image: url("@img/Layer 4.png");
+   background-position: 50% 50%;
+   background-size: cover;
+   min-height: 500px;
+   padding: 20px 0;
+   color: $color-text-dark;
+
+   &__title {
+      font-size: 3.5rem;
+   }
+
+   &__subtitle {
+      font-size: 1.4rem;
+   }
+}
+
+.navbar {
+   margin-bottom: 170px;
+   font-size: 1.4rem;
+
+   &-brand {
+      font-size: 1.8rem;
+   }
+}
+
+.nav-item:not(:last-child) {
+   margin-right: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+   color: $color-text-dark;
+}
